@@ -3,14 +3,27 @@
     {
       "DownstreamPathTemplate": "/api/product/{everything}",
       "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/product/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "product",
           "Port": 81
         }
       ],
-      "UpstreamPathTemplate": "/product/{everything}",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
+      "SwaggerKey": "product-api"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "product-api",
+      "Config": [
+        {
+          "Name": "Product API",
+          "Version": "v1",
+          "Url": "http://product:81/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 }

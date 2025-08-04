@@ -10,5 +10,10 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Ocelot" Version="24.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+    <PackageReference Include="MMLib.SwaggerForOcelot" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="ocelot.SwaggerEndPoints.json" />
   </ItemGroup>
 </Project>
