@@ -4,7 +4,7 @@
       "DownstreamPathTemplate": "/api/product/{everything}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/product/{everything}",
-      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "product",
