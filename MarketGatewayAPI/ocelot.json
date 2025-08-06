@@ -10,18 +10,17 @@
           "Host": "product",
           "Port": 81
         }
-      ],
-      "SwaggerKey": "product-api"
-    }
-  ],
-  "SwaggerEndPoints": [
+      ]
+    },
     {
-      "Key": "product-api",
-      "Config": [
+      "DownstreamPathTemplate": "/api/Command/{everything}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/command/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamHostAndPorts": [
         {
-          "Name": "Product API",
-          "Version": "v1",
-          "Url": "http://product:81/swagger/v1/swagger.json"
+          "Host": "command",
+          "Port": 82
         }
       ]
     }
